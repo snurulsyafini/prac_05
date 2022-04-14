@@ -6,15 +6,15 @@ def main():
 
 
 def word_count(user_string):
-    counts = dict()
+    word_to_count = {}
     words = str.split(user_string)
 
     for word in words:
-        if word in counts:
-            counts[word] += 1
+        if word in word_to_count:
+            word_to_count[word] += 1
         else:
-            counts[word] = 1
-    return counts
+            word_to_count[word] = 1
+    return word_to_count
 
 
 if __name__ == '__main__':
