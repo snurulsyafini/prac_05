@@ -15,7 +15,7 @@ def main():
 
 
 def get_name_from_email(user_email):
-    """Get assumed name from email"""
+    """Get name from email"""
     special_word = user_email.split("@")[0]
     parts = special_word.split(".")
     user_name = " ".join(parts).title()
